@@ -1,13 +1,12 @@
 fileFormatVersion: 2
-guid: 9fe9a495adca3b1459b469cff5640ec3
-timeCreated: 1507643628
+guid: baab36edf0886ef4da2866b0fd812828
+timeCreated: 1507644144
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: shahter_0
-    21300002: shahter_1
-    21300004: shahter_2
-    21300006: shahter_3
+    21300000: lamp_0
+    21300002: lamp_1
+    21300004: lamp_2
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -79,13 +78,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shahter_0
+      name: lamp_0
       rect:
         serializedVersion: 2
-        x: 39
-        y: 36
-        width: 302
-        height: 292
+        x: 80
+        y: 179
+        width: 4
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -93,13 +92,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: shahter_1
+      name: lamp_1
       rect:
         serializedVersion: 2
-        x: 456
-        y: 21
-        width: 210
-        height: 294
+        x: 81
+        y: 166
+        width: 139
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lamp_2
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 160
+        width: 179
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

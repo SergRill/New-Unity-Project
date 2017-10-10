@@ -1,13 +1,9 @@
 fileFormatVersion: 2
-guid: 9fe9a495adca3b1459b469cff5640ec3
-timeCreated: 1507643628
+guid: 17a65e456712b1a40a89373d1d2b827f
+timeCreated: 1507644128
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: shahter_0
-    21300002: shahter_1
-    21300004: shahter_2
-    21300006: shahter_3
+  fileIDToRecycleName: {}
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -43,7 +39,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -67,45 +63,9 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Standalone
-    maxTextureSize: 2048
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: shahter_0
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 36
-        width: 302
-        height: 292
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: shahter_1
-      rect:
-        serializedVersion: 2
-        x: 456
-        y: 21
-        width: 210
-        height: 294
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
+    sprites: []
     outline: []
     physicsShape: []
   spritePackingTag: 
