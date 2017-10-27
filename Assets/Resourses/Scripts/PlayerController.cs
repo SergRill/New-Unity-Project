@@ -9,6 +9,9 @@ public class PlayerController : MonoBehaviour {
     public float acceleration = 0.001f;
     public float animationCrossLag = 1;
 
+    Vector3 destination;
+    Vector3 moveWay;
+
 
     Animator plA;
     Vector3 position = new Vector3();
@@ -19,55 +22,59 @@ public class PlayerController : MonoBehaviour {
         plA = GetComponent<Animator>();
         position.Set(transform.position.x, transform.position.y, transform.position.z);
         transform.position = position;
+        destination.Set(transform.position.x, transform.position.y, transform.position.z);
     }
-	
-	// Update is called once per frame
-	void Update () {
 
-        if (Input.GetKey(KeyCode.D))
+    // Update is called once per frame
+    void Update() {
+
+        if (Input.GetMouseButtonDown(0))
         {
+
+            destination = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            destination = new Vector3(destination.x, destination.y, 0);
+            moveWay = new Vector3(transform.position.x - destination.x, transform.position.y - destination.y, 0);
+            print(moveWay);
             setMovingStateTrue();
-            setSpeed(true, 1);
+            if (transform.position.x > destination.x)
+                transform.localScale = new Vector3(transform.lossyScale.x * -1, transform.lossyScale.y, transform.lossyScale.z);
+            else if(transform.localScale.x < 0 && transform.position.x < destination.x)
+                transform.localScale = new Vector3(transform.lossyScale.x * -1, transform.lossyScale.y, transform.lossyScale.z);
         }
-        else if (Input.GetKey(KeyCode.A))
+
+        if (!Vector3.Distance(transform.position, destination).Equals(0))
         {
-            setMovingStateTrue();
-            setSpeed(true, -1);
+            moveWay = new Vector3(transform.position.x - destination.x, transform.position.y - destination.y, 0) / Vector3.Distance(transform.position, destination) * currentSpeed;
+            transform.position = transform.position + moveWay * -0.01f;
+            transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+            speed();
+
+            
+
+            if (Vector3.Distance(transform.position, destination) < 0.1f)
+            {
+                transform.position = new Vector3(destination.x, destination.y, destination.z);
+                currentSpeed = 0;
+            }
+           
         }
         else
             setMovingStateFalse();
     }
 
-    public void setSpeed(bool accel, int mod)
+    public void speed()
     {
-
-        if (accel)
-            if (Mathf.Abs(currentSpeed) < moveSpeed) currentSpeed += acceleration * mod;
-            else { }
-        else if (currentSpeed != 0)
-            if (Mathf.Abs(currentSpeed) <= acceleration) currentSpeed = 0;
-            else if(currentSpeed > 0) currentSpeed -= acceleration;
-            else currentSpeed += acceleration;
-        position.x += currentSpeed;
-        transform.position = position;
+        if (currentSpeed <= moveSpeed)
+            currentSpeed += acceleration;
     }
 
     public void setMovingStateTrue()
     {
-        if (!movingState)
-        {
             GetComponent<Animator>().CrossFade("walk", animationCrossLag);
-            movingState = true;
-        }   
     }
     public void setMovingStateFalse()
     {
-        if (movingState)
-        {
             GetComponent<Animator>().CrossFade("idle", animationCrossLag);
-            movingState = false;
-        }
-        setSpeed(false, 1);
     }
 
 }
