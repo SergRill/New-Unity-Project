@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: ba18ce1245d977943b928fd22ec14c2c
-timeCreated: 1508238152
+timeCreated: 1508264723
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -113,10 +113,10 @@ TextureImporter:
       name: talib_1
       rect:
         serializedVersion: 2
-        x: 488
+        x: 524
         y: 1415
-        width: 273
-        height: 281
+        width: 235
+        height: 188
       alignment: 9
       pivot: {x: 0.3240408, y: 0.23407874}
       border: {x: 0, y: 0, z: 0, w: 0}
