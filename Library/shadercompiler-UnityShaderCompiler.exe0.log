@@ -1,2 +1,15 @@
 Base path: D:/Programing/Unity/Editor/Data
 Cmd: initializeCompiler
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+Cmd: preprocess
+  insize=990 outsize=221 ok=1
+Cmd: preprocess
+  insize=1482 outsize=1921 ok=1
+Cmd: preprocess
+  error: 2 plat 20 at (36): Unexpected identifier "vertex". Expected one of: sampler sampler1D sampler2D sampler3D samplerCUBE sampler_state SamplerState SamplerComparisonState bool int uint half float double or a user-defined type
+  insize=1432 outsize=624 ok=0
+>>>>>>> 73f59c839c4924c68b8bc145098bf18398e3cc9f
+>>>>>>> ba7ae5107173fff68312343732b8386b713c8068

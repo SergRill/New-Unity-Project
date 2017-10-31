@@ -1,4 +1,12 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Resourses/Scenes/3d1.unity
+=======
+<<<<<<< HEAD
+- path: Assets/3d1.unity
+=======
+- path: Assets/Resourses/Scenes/ff.unity
+>>>>>>> 73f59c839c4924c68b8bc145098bf18398e3cc9f
+>>>>>>> ba7ae5107173fff68312343732b8386b713c8068
   isLoaded: 1
   isActive: 1
