@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Resourses/Scenes/ff.unity
+- path: Assets/Resourses/Scenes/cave.unity
   isLoaded: 1
   isActive: 1
