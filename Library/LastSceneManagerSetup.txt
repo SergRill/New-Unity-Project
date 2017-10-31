@@ -1,4 +1,12 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Resourses/Scenes/cave.unity
+=======
+<<<<<<< HEAD
+- path: Assets/3d1.unity
+=======
+- path: Assets/Resourses/Scenes/ff.unity
+>>>>>>> 7c974086678d65595d6d63bcd94feaa8a09ebfec
+>>>>>>> 330e0086eb152f55a2eed5f94f21470eab278420
   isLoaded: 1
   isActive: 1
