@@ -1,0 +1,285 @@
+fileFormatVersion: 2
+guid: ba18ce1245d977943b928fd22ec14c2c
+timeCreated: 1508264723
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: talib_0
+    21300002: talib_1
+    21300004: talib_2
+    21300006: talib_3
+    21300008: talib_4
+    21300010: talib_5
+    21300012: talib_6
+    21300014: talib_7
+    21300016: talib_8
+    21300018: talib_9
+    21300020: talib_10
+    21300022: talib_11
+    21300024: talib_12
+    21300026: talib_13
+    21300028: talib_14
+    21300030: talib_15
+    21300032: talib_16
+    21300034: talib_17
+    21300036: talib_18
+    21300038: talib_19
+    21300040: talib_20
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: talib_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1285
+        width: 343
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5170999, y: 0.04250635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: talib_1
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1415
+        width: 235
+        height: 188
+      alignment: 9
+      pivot: {x: 0.3240408, y: 0.23407874}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: talib_2
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1423
+        width: 140
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: talib_3
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 976
+        width: 200
+        height: 398
+      alignment: 9
+      pivot: {x: 0.56671816, y: 0.84018797}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: talib_5
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 941
+        width: 317
+        height: 409
+      alignment: 9
+      pivot: {x: 0.7104663, y: 0.5913498}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: talib_6
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 538
+        width: 253
+        height: 386
+      alignment: 9
+      pivot: {x: 0.576599, y: 0.8418897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: talib_10
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 691
+        width: 353
+        height: 200
+      alignment: 9
+      pivot: {x: 0.05968659, y: 0.45601043}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: talib_13
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 673
+        width: 154
+        height: 224
+      alignment: 9
+      pivot: {x: 0.6904321, y: 0.683291}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: talib_16
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 14
+        width: 274
+        height: 467
+      alignment: 9
+      pivot: {x: 0.4785936, y: 0.9270244}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: talib_17
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1
+        width: 201
+        height: 643
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: talib_18
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 369
+        width: 131
+        height: 229
+      alignment: 9
+      pivot: {x: 0.52238685, y: 0.67928904}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: talib_19
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 41
+        width: 206
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: talib_20
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1053
+        width: 296
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

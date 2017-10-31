@@ -1,0 +1,292 @@
+fileFormatVersion: 2
+guid: 5da27ea4edc5c704f8ddc6883ee17e8f
+timeCreated: 1508239035
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: shahter_cloth_0
+    21300002: shahter_cloth_1
+    21300004: shahter_cloth_2
+    21300006: shahter_cloth_3
+    21300008: shahter_cloth_4
+    21300010: shahter_cloth_5
+    21300012: shahter_cloth_6
+    21300014: shahter_cloth_7
+    21300016: shahter_cloth_8
+    21300018: shahter_cloth_9
+    21300020: shahter_cloth_10
+    21300022: shahter_cloth_11
+    21300024: shahter_cloth_12
+    21300026: shahter_cloth_13
+    21300028: shahter_cloth_14
+    21300030: shahter_cloth_15
+    21300032: shahter_cloth_16
+    21300034: shahter_cloth_17
+    21300036: shahter_cloth_18
+    21300038: shahter_cloth_19
+    21300040: shahter_cloth_20
+    21300042: shahter_cloth_21
+    21300044: shahter_cloth_22
+    21300046: shahter_cloth_23
+    21300048: shahter_cloth_24
+    21300050: shahter_cloth_27
+    21300052: shahter_cloth_28
+    21300054: shahter_cloth_29
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: shahter_cloth_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1285
+        width: 379
+        height: 500
+      alignment: 9
+      pivot: {x: 0.5170999, y: 0.04250635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_cloth_1
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1428
+        width: 295
+        height: 325
+      alignment: 9
+      pivot: {x: 0.3240408, y: 0.2340787}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_cloth_2
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1423
+        width: 140
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_cloth_3
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 974
+        width: 199
+        height: 396
+      alignment: 9
+      pivot: {x: 0.5667182, y: 0.840188}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_cloth_4
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 941
+        width: 316
+        height: 409
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_cloth_5
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 538
+        width: 222
+        height: 383
+      alignment: 9
+      pivot: {x: 0.40079683, y: 0.8546272}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_cloth_6
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 696
+        width: 426
+        height: 240
+      alignment: 9
+      pivot: {x: 0.0499456, y: 0.40017292}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_cloth_7
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 671
+        width: 145
+        height: 222
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_cloth_8
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 14
+        width: 275
+        height: 500
+      alignment: 9
+      pivot: {x: 0.4785936, y: 0.9270244}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_cloth_9
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 458
+        width: 97
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_cloth_10
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 370
+        width: 112
+        height: 226
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_cloth_11
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 43
+        width: 201
+        height: 242
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_cloth_12
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1048
+        width: 385
+        height: 288
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
