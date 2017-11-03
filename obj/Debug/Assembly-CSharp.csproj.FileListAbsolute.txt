@@ -30,3 +30,4 @@ C:\Users\Игорь\Documents\New-Unity-Project\Temp\bin\Debug\UnityEngine.Analy
 C:\Users\Игорь\Documents\New-Unity-Project\Temp\bin\Debug\UnityEngine.HoloLens.xml
 C:\Users\Игорь\Documents\New-Unity-Project\obj\Debug\Assembly-CSharp.dll
 C:\Users\Игорь\Documents\New-Unity-Project\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Игорь\Documents\New-Unity-Project\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
