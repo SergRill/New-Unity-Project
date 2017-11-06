@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-    public Camera controllerCamera;
 
     public float moveSpeed = 0.01f;
     public float currentSpeed = 0;
-    public float acceleration = 0.001f;
+    ///public float acceleration = 0.001f;
     public float animationCrossLag = 1;
 
     Vector3 destination;
@@ -18,6 +17,7 @@ public class PlayerController : MonoBehaviour {
     Animator plA;
     Vector3 position = new Vector3();
     bool movingState = false;
+    bool rightWay = true;
 
 	// Use this for initialization
 	void Start () {
@@ -29,31 +29,43 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKey(KeyCode.D))
         {
-            RaycastHit hit = Physics.raycasy
-            
-            if (hit.collider != null)
+            transform.position = new Vector3(transform.position.x + moveSpeed, transform.position.y, transform.position.z);
+            setMovingState(true);
+            if (!rightWay)
             {
-
-                float distance = Mathf.Abs(hit.point.y - transform.position.y);
-                print(distance);
+                rightWay = true;
+                transform.localScale = new Vector3(transform.lossyScale.x * -1, transform.lossyScale.y, transform.lossyScale.z);
             }
-
         }
-
-      
+        else if (Input.GetKey(KeyCode.A))
+        {
+            transform.position = new Vector3(transform.position.x - moveSpeed, transform.position.y, transform.position.z);
+            setMovingState(true);
+            if (rightWay)
+            {
+                rightWay = false;
+                transform.localScale = new Vector3(transform.lossyScale.x * -1, transform.lossyScale.y, transform.lossyScale.z);
+            }
+        }
+        else setMovingState(false);
     }
 
-   
 
-    public void setMovingStateTrue()
+    public void setMovingState(bool move)
     {
+        if (move && !movingState)
+        {
+            movingState = true;
             GetComponent<Animator>().CrossFade("walk", animationCrossLag);
-    }
-    public void setMovingStateFalse()
-    {
+        }
+        else if (!move && movingState)
+        {
+            movingState = false;
             GetComponent<Animator>().CrossFade("idle", animationCrossLag);
+        }
     }
+ 
 
 }
