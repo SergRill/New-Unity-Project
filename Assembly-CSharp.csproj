@@ -54,44 +54,10 @@
      <Compile Include="Assets\Resourses\Scripts\PlayerController.cs" />
      <None Include="Assets\Resourses\Shaders\Sprites-Bumped Diffuse.shader" />
      <None Include="Assets\Resourses\Shaders\shadow.shader" />
-<<<<<<< HEAD
-     <None Include="Assets\PostProcessing\Resources\Shaders\Blit.shader" />
-     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
-     <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeCompute.compute" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA3.cginc" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.shader" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.shader" />
-     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
-     <None Include="Assets\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
-     <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\Common.cginc" />
-     <None Include="Assets\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
-     <None Include="Assets\PostProcessing\Editor Resources\UI\Trackball.shader" />
-     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.cginc" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\TAA.shader" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\EyeHistogram.compute" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\TAA.cginc" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\GrainGen.shader" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\FXAA.shader" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\DiskKernels.cginc" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.cginc" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\ScreenSpaceRaytrace.cginc" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\Bloom.shader" />
-     <None Include="Assets\PostProcessing\Editor Resources\Monitors\VectorscopeRender.shader" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\EyeAdaptation.shader" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\ColorGrading.cginc" />
-     <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
-     <None Include="Assets\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
-     <None Include="Assets\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
-=======
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
      <None Include="Assets\Standard Assets\ParticleSystems\Shaders\PriorityParticleAdd.shader" />
->>>>>>> e74a31de92ba83d687d3c47dbef58675e4f71422
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -116,11 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-<<<<<<< HEAD
-      <Project>{83D95FA1-9887-0F23-C41B-664A3788A2E8}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
-=======
       <Project>{79391AC5-8752-B4CC-F33F-BB9EB1094377}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
->>>>>>> e74a31de92ba83d687d3c47dbef58675e4f71422
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
