@@ -51,10 +51,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Resourses\Scripts\Inventory\Inventory.cs" />
      <Compile Include="Assets\Resourses\Scripts\Inventory\InventoryButton.cs" />
-     <Compile Include="Assets\Resourses\Scripts\Player\Inventory.cs" />
+     <Compile Include="Assets\Resourses\Scripts\Inventory\InventoryGUIScale.cs" />
      <Compile Include="Assets\Resourses\Scripts\Player\PlayerController.cs" />
-     <Compile Include="Assets\Resourses\Scripts\System\InventoryGUIScale.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
      <None Include="Assets\Standard Assets\Effects\TessellationShaders\Shaders\BumpedSpecularSmooth.shader" />
@@ -96,11 +96,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-<<<<<<< HEAD
       <Project>{83D95FA1-9887-0F23-C41B-664A3788A2E8}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
-=======
-      <Project>{79391AC5-8752-B4CC-F33F-BB9EB1094377}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
->>>>>>> 5348aa075b2e5e3ca0e7af583d01ec0980ebf8fd
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

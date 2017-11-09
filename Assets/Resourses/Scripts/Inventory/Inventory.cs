@@ -29,6 +29,7 @@ public class Inventory : MonoBehaviour {
             buttons[i] = Instantiate(buttonStyle);
             buttons[i].id = i;
             buttons[i].cells = cells;
+
             buttons[i].inventory = this;
         }
         */
