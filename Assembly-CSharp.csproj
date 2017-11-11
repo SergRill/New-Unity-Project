@@ -54,6 +54,7 @@
      <Compile Include="Assets\Resourses\Scripts\Inventory\Inventory.cs" />
      <Compile Include="Assets\Resourses\Scripts\Inventory\InventoryButton.cs" />
      <Compile Include="Assets\Resourses\Scripts\Inventory\InventoryGUIScale.cs" />
+     <Compile Include="Assets\Resourses\Scripts\message.cs" />
      <Compile Include="Assets\Resourses\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Resourses\Scripts\ReimportUnityEngineUI.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
@@ -76,11 +77,20 @@
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Programing/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>D:/Programing/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.TestRunner">
  <HintPath>D:/Programing/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
  <HintPath>D:/Programing/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>D:/Programing/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>D:/Programing/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>D:/Programing/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>

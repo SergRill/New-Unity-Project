@@ -8,41 +8,20 @@ public class Inventory : MonoBehaviour {
     public Color chooseColor;
     public Color normalColor;
 
-    public int cells = 8;
-    public int indent = 200;
-
-    //public InventoryButton buttonStyle;
-    //InventoryButton [] buttons;
-    public GameObject buttonStyle;
-    GameObject[] buttons;
+    public GameObject[] buttons;
     int lastPressed = 0;
 
-    public Canvas canvas;
-
-
+    public bool show = false;
 
     // Use this for initialization
     void Start () {
-       /* buttons = new InventoryButton[cells];
-        
-        for(int i = 0; i < cells; i++)
-        {
-            buttons[i] = Instantiate(buttonStyle);
-            buttons[i].id = i;
-            buttons[i].cells = cells;
 
-            buttons[i].inventory = this;
-        }
-        */
-        buttons = new GameObject[cells];
+      
 
-        for (int i = 0; i < cells; i++)
+        for (int i = 0; i < buttons.Length; i++)
         {
-            buttons[i] = Instantiate(buttonStyle);
-            buttons[i].transform.parent = this.transform;
             InventoryButton b = buttons[i].GetComponent<InventoryButton>();
             b.id = i;
-            b.cells = cells;
             b.inventory = this;
         }
 
@@ -52,12 +31,18 @@ public class Inventory : MonoBehaviour {
     {
         //buttons[lastPressed].background.color = normalColor;
         //buttons[id].background.color = chooseColor;
-        //lastPressed = id;
+        lastPressed = id;
     }
 	
 	// Update is called once per frame
 	void Update () {
-
-
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            if (show == false)
+                GetComponent<Animator>().CrossFade("InventoryShow", 1);
+            else
+                GetComponent<Animator>().CrossFade("InventoryHide", 1);
+            show = !show;
+        }
 	}
 }
