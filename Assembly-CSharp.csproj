@@ -53,7 +53,6 @@
   <ItemGroup>
      <Compile Include="Assets\Resourses\Scripts\Inventory\Inventory.cs" />
      <Compile Include="Assets\Resourses\Scripts\Inventory\InventoryButton.cs" />
-     <Compile Include="Assets\Resourses\Scripts\Inventory\InventoryGUIScale.cs" />
      <Compile Include="Assets\Resourses\Scripts\message.cs" />
      <Compile Include="Assets\Resourses\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Resourses\Scripts\ReimportUnityEngineUI.cs" />

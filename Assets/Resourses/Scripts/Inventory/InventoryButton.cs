@@ -10,8 +10,6 @@ public class InventoryButton : MonoBehaviour {
 
     public Inventory inventory;
     public int id;
-    public int cells;
-    bool show = false;
 
 
 	// Use this for initialization
@@ -24,9 +22,6 @@ public class InventoryButton : MonoBehaviour {
         inventory.setInventory(id);
     }
 
-
-	
-	// Update is called once per frame
 	void Update () {
    
 	}

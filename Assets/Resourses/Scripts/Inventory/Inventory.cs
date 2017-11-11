@@ -16,21 +16,21 @@ public class Inventory : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-      
-
         for (int i = 0; i < buttons.Length; i++)
         {
-            InventoryButton b = buttons[i].GetComponent<InventoryButton>();
-            b.id = i;
-            b.inventory = this;
+            buttons[i].GetComponent<InventoryButton>().id = i;
+            buttons[i].GetComponent<CanvasRenderer>().SetColor(normalColor);
         }
+            
 
     }
 
     public void setInventory(int id)
     {
-        //buttons[lastPressed].background.color = normalColor;
-        //buttons[id].background.color = chooseColor;
+        if (id > 7) id = 0;
+        else if (id < 0) id = 7;
+        buttons[id].GetComponent<CanvasRenderer>().SetColor(chooseColor);
+        buttons[lastPressed].GetComponent<CanvasRenderer>().SetColor(normalColor);
         lastPressed = id;
     }
 	
@@ -43,6 +43,18 @@ public class Inventory : MonoBehaviour {
             else
                 GetComponent<Animator>().CrossFade("InventoryHide", 1);
             show = !show;
+        }
+        else if(show)
+        {
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                setInventory(lastPressed + 1);
+            }
+            else if (Input.GetKeyDown(KeyCode.A))
+            {
+                setInventory(lastPressed - 1);
+            }
+
         }
 	}
 }

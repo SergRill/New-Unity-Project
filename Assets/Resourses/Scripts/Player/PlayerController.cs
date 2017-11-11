@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+    public Inventory inventory;
 
     public float moveSpeed = 0.01f;
     public float currentSpeed = 0;
-    ///public float acceleration = 0.001f;
     public float animationCrossLag = 1;
 
     Vector3 destination;
@@ -29,27 +29,30 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
-        if (Input.GetKey(KeyCode.D))
+        if(!inventory.show)
         {
-            transform.position = new Vector3(transform.position.x + moveSpeed, transform.position.y, transform.position.z);
-            setMovingState(true);
-            if (!rightWay)
+            if (Input.GetKey(KeyCode.D))
             {
-                rightWay = true;
-                transform.localScale = new Vector3(transform.lossyScale.x * -1, transform.lossyScale.y, transform.lossyScale.z);
+                transform.position = new Vector3(transform.position.x + moveSpeed, transform.position.y, transform.position.z);
+                setMovingState(true);
+                if (!rightWay)
+                {
+                    rightWay = true;
+                    transform.localScale = new Vector3(transform.lossyScale.x * -1, transform.lossyScale.y, transform.lossyScale.z);
+                }
             }
-        }
-        else if (Input.GetKey(KeyCode.A))
-        {
-            transform.position = new Vector3(transform.position.x - moveSpeed, transform.position.y, transform.position.z);
-            setMovingState(true);
-            if (rightWay)
+            else if (Input.GetKey(KeyCode.A))
             {
-                rightWay = false;
-                transform.localScale = new Vector3(transform.lossyScale.x * -1, transform.lossyScale.y, transform.lossyScale.z);
+                transform.position = new Vector3(transform.position.x - moveSpeed, transform.position.y, transform.position.z);
+                setMovingState(true);
+                if (rightWay)
+                {
+                    rightWay = false;
+                    transform.localScale = new Vector3(transform.lossyScale.x * -1, transform.lossyScale.y, transform.lossyScale.z);
+                }
             }
+            else setMovingState(false);
         }
-        else setMovingState(false);
     }
 
 
