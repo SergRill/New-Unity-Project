@@ -1,0 +1,257 @@
+fileFormatVersion: 2
+guid: 0be9f09c25c41b4449cfbc73e3b5c39e
+timeCreated: 1510594809
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: group_0
+    100002: group_1
+    100004: group_2
+    100006: group_2 1
+    100008: group_3
+    100010: group_3 1
+    100012: group_4
+    100014: group_4 1
+    100016: group_5
+    100018: group_5 1
+    100020: group_6
+    100022: ID107
+    100024: ID115
+    100026: ID123
+    100028: ID131
+    100030: ID139
+    100032: ID145
+    100034: ID153
+    100036: ID159
+    100038: ID167
+    100040: ID171
+    100042: ID99
+    100044: //RootNode
+    100046: group_0_001
+    100048: group_0_002
+    100050: group_0_003
+    100052: group_0_004
+    100054: group_0_005
+    100056: group_0_006
+    100058: group_0_007
+    100060: group_0_008
+    100062: group_0_009
+    100064: group_0_010
+    100066: group_0_011
+    100068: group_2_001
+    100070: group_3_001
+    100072: group_4_001
+    100074: group_5_001
+    100076: Lamp
+    100078: SketchUp
+    400000: group_0
+    400002: group_1
+    400004: group_2
+    400006: group_2 1
+    400008: group_3
+    400010: group_3 1
+    400012: group_4
+    400014: group_4 1
+    400016: group_5
+    400018: group_5 1
+    400020: group_6
+    400022: ID107
+    400024: ID115
+    400026: ID123
+    400028: ID131
+    400030: ID139
+    400032: ID145
+    400034: ID153
+    400036: ID159
+    400038: ID167
+    400040: ID171
+    400042: ID99
+    400044: //RootNode
+    400046: group_0_001
+    400048: group_0_002
+    400050: group_0_003
+    400052: group_0_004
+    400054: group_0_005
+    400056: group_0_006
+    400058: group_0_007
+    400060: group_0_008
+    400062: group_0_009
+    400064: group_0_010
+    400066: group_0_011
+    400068: group_2_001
+    400070: group_3_001
+    400072: group_4_001
+    400074: group_5_001
+    400076: Lamp
+    400078: SketchUp
+    2300000: group_0
+    2300002: group_2
+    2300004: group_2 1
+    2300006: group_3
+    2300008: group_3 1
+    2300010: group_4
+    2300012: group_4 1
+    2300014: group_5
+    2300016: group_5 1
+    2300018: ID107
+    2300020: ID115
+    2300022: ID123
+    2300024: ID131
+    2300026: ID139
+    2300028: ID145
+    2300030: ID153
+    2300032: ID159
+    2300034: ID99
+    2300036: group_0_001
+    2300038: group_0_002
+    2300040: group_0_003
+    2300042: group_0_004
+    2300044: group_0_005
+    2300046: group_0_006
+    2300048: group_0_007
+    2300050: group_0_008
+    2300052: group_0_009
+    2300054: group_2_001
+    2300056: group_3_001
+    2300058: group_4_001
+    2300060: group_5_001
+    3300000: group_0
+    3300002: group_2
+    3300004: group_2 1
+    3300006: group_3
+    3300008: group_3 1
+    3300010: group_4
+    3300012: group_4 1
+    3300014: group_5
+    3300016: group_5 1
+    3300018: ID107
+    3300020: ID115
+    3300022: ID123
+    3300024: ID131
+    3300026: ID139
+    3300028: ID145
+    3300030: ID153
+    3300032: ID159
+    3300034: ID99
+    3300036: group_0_001
+    3300038: group_0_002
+    3300040: group_0_003
+    3300042: group_0_004
+    3300044: group_0_005
+    3300046: group_0_006
+    3300048: group_0_007
+    3300050: group_0_008
+    3300052: group_0_009
+    3300054: group_2_001
+    3300056: group_3_001
+    3300058: group_4_001
+    3300060: group_5_001
+    4300000: group_0
+    4300002: ID99
+    4300004: ID107
+    4300006: ID115
+    4300008: ID123
+    4300010: ID131
+    4300012: ID139
+    4300014: ID145
+    4300016: ID153
+    4300018: ID159
+    4300020: group_2
+    4300022: group_3
+    4300024: group_4
+    4300026: group_5
+    4300028: group_2
+    4300030: group_3
+    4300032: group_4
+    4300034: group_5
+    4300036: group_2_001
+    4300038: group_3_001
+    4300040: group_4_001
+    4300042: group_5_001
+    4300044: group_0_001
+    4300046: group_0_002
+    4300048: group_0_003
+    4300050: group_0_004
+    4300052: group_0_005
+    4300054: group_0_006
+    4300056: group_0_007
+    4300058: group_0_008
+    4300060: group_0_009
+    9500000: //RootNode
+    10800000: Lamp
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 1
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
