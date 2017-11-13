@@ -29,30 +29,34 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
-        if(!inventory.show)
+        if (inventory != null && !inventory.show)
+            move();
+        else move();
+    }
+
+    public void move()
+    {
+        if (Input.GetKey(KeyCode.D))
         {
-            if (Input.GetKey(KeyCode.D))
+            transform.position = new Vector3(transform.position.x + moveSpeed, transform.position.y, transform.position.z);
+            setMovingState(true);
+            if (!rightWay)
             {
-                transform.position = new Vector3(transform.position.x + moveSpeed, transform.position.y, transform.position.z);
-                setMovingState(true);
-                if (!rightWay)
-                {
-                    rightWay = true;
-                    transform.localScale = new Vector3(transform.lossyScale.x * -1, transform.lossyScale.y, transform.lossyScale.z);
-                }
+                rightWay = true;
+                transform.localScale = new Vector3(transform.lossyScale.x * -1, transform.lossyScale.y, transform.lossyScale.z);
             }
-            else if (Input.GetKey(KeyCode.A))
-            {
-                transform.position = new Vector3(transform.position.x - moveSpeed, transform.position.y, transform.position.z);
-                setMovingState(true);
-                if (rightWay)
-                {
-                    rightWay = false;
-                    transform.localScale = new Vector3(transform.lossyScale.x * -1, transform.lossyScale.y, transform.lossyScale.z);
-                }
-            }
-            else setMovingState(false);
         }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            transform.position = new Vector3(transform.position.x - moveSpeed, transform.position.y, transform.position.z);
+            setMovingState(true);
+            if (rightWay)
+            {
+                rightWay = false;
+                transform.localScale = new Vector3(transform.lossyScale.x * -1, transform.lossyScale.y, transform.lossyScale.z);
+            }
+        }
+        else setMovingState(false);
     }
 
 
