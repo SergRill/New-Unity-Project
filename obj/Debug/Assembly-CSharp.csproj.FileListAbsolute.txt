@@ -31,3 +31,6 @@ C:\Users\Игорь\Documents\New-Unity-Project\Temp\bin\Debug\UnityEngine.HoloL
 C:\Users\Игорь\Documents\New-Unity-Project\obj\Debug\Assembly-CSharp.dll
 C:\Users\Игорь\Documents\New-Unity-Project\obj\Debug\Assembly-CSharp.pdb
 C:\Users\Игорь\Documents\New-Unity-Project\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+D:\Сергей\New Unity Project\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+D:\Сергей\New Unity Project\obj\Debug\Assembly-CSharp.dll
+D:\Сергей\New Unity Project\obj\Debug\Assembly-CSharp.pdb
