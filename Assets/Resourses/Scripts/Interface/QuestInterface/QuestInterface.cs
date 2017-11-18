@@ -35,7 +35,7 @@ public class QuestInterface : MonoBehaviour {
         a.text = text;
      
 
-       // g.GetComponent<RectTransform>().localScale = new Vector3(text.Length * 20, 35, 0);
+        g.GetComponent<RectTransform>().localScale = new Vector3(text.Length * 20, 35, 0);
         ideas.AddFirst(a);
     }
 
