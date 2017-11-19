@@ -16,10 +16,10 @@ public class QuestInterface : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        add(MAIN_STORY_IDEA, "testText");
+        add(MAIN_STORY_IDEA, "tttttTTTTtt", 3, 4);
 	}
 	
-    public void add(int ideaID, string text)
+    public void add(int ideaID, string text, int x, int y)
     {
         GameObject g = null ;
         if (ideaID == MAIN_STORY_IDEA)
@@ -33,9 +33,10 @@ public class QuestInterface : MonoBehaviour {
 
         IdeaScript a = g.GetComponent<IdeaScript>();
         a.text = text;
-     
-
-        g.GetComponent<RectTransform>().localScale = new Vector3(text.Length * 20, 35, 0);
+        g.GetComponent<UnityEngine.UI.Text>().text = text;
+        g.GetComponent<RectTransform>().sizeDelta = new Vector2(text.Length * 14, 35);
+        g.transform.position = Camera.main.WorldToScreenPoint(new Vector3(x, y, 0));
+        
         ideas.AddFirst(a);
     }
 
