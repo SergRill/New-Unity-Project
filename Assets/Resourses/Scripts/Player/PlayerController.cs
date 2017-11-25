@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
-    public Inventory inventory;
+    public InterfaceScript interfaceScript;
 
     public float moveSpeed = 0.01f;
     public float currentSpeed = 0;
@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
-        if (inventory != null && !inventory.show)
+        if (interfaceScript != null && !interfaceScript.getShow())
             move();
         else move();
     }

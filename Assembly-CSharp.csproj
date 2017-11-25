@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Resourses\Scripts\Interface\InterfaceScript.cs" />
      <Compile Include="Assets\Resourses\Scripts\Interface\Inventory\Inventory.cs" />
      <Compile Include="Assets\Resourses\Scripts\Interface\Inventory\InventoryButton.cs" />
      <Compile Include="Assets\Resourses\Scripts\Interface\QuestInterface\IdeaScript.cs" />
