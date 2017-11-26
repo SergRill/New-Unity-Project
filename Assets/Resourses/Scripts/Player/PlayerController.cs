@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour {
     Vector3 position = new Vector3();
     bool movingState = false;
     bool rightWay = true;
+    bool isMoving = false;
 
 	// Use this for initialization
 	void Start () {
@@ -29,17 +30,21 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
-        if (interfaceScript != null && !interfaceScript.getShow())
-            move();
+        if (interfaceScript != null)
+            if (!interfaceScript.getShow())
+                move();
+            else { }
         else move();
     }
 
     public void move()
     {
+
+        movingState = false;
         if (Input.GetKey(KeyCode.D))
         {
             transform.position = new Vector3(transform.position.x + moveSpeed, transform.position.y, transform.position.z);
-            setMovingState(true);
+            movingState = true;
             if (!rightWay)
             {
                 rightWay = true;
@@ -49,39 +54,42 @@ public class PlayerController : MonoBehaviour {
         else if (Input.GetKey(KeyCode.A))
         {
             transform.position = new Vector3(transform.position.x - moveSpeed, transform.position.y, transform.position.z);
-            setMovingState(true);
+            movingState = true;
             if (rightWay)
             {
                 rightWay = false;
                 transform.localScale = new Vector3(transform.lossyScale.x * -1, transform.lossyScale.y, transform.lossyScale.z);
             }
         }
-        else if(Input.GetKey(KeyCode.S))
+
+        if (Input.GetKey(KeyCode.S))
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - moveSpeed);
-            setMovingState(true);
+            movingState = true;
         }
         else if (Input.GetKey(KeyCode.W))
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + moveSpeed);
-            setMovingState(true);
+            movingState = true;
         }
-        else setMovingState(false);
+
+        setMovingState(movingState);
     }
 
 
     public void setMovingState(bool move)
     {
-        if (move && !movingState)
+        if (move && !isMoving)
         {
-            movingState = true;
             GetComponent<Animator>().CrossFade("walk", animationCrossLag);
+            isMoving = true;
         }
-        else if (!move && movingState)
+        else if(!move)
         {
-            movingState = false;
+            isMoving = false;
             GetComponent<Animator>().CrossFade("idle", animationCrossLag);
         }
+            
     }
  
 
