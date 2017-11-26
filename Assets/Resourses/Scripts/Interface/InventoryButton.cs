@@ -8,7 +8,7 @@ public class InventoryButton : MonoBehaviour {
    // public SpriteRenderer background;
    // public SpriteRenderer objectSprite;
 
-    public Inventory inventory;
+    public InterfaceScript inventory;
     public int id;
     public bool haveObject = false;
 
@@ -17,7 +17,6 @@ public class InventoryButton : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         objectTexture = transform.GetChild(0).GetComponent<UnityEngine.UI.Image>();
-        
 	}
 
     public void press()
