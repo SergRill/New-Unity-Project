@@ -56,6 +56,16 @@ public class PlayerController : MonoBehaviour {
                 transform.localScale = new Vector3(transform.lossyScale.x * -1, transform.lossyScale.y, transform.lossyScale.z);
             }
         }
+        else if(Input.GetKey(KeyCode.S))
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - moveSpeed);
+            setMovingState(true);
+        }
+        else if (Input.GetKey(KeyCode.W))
+        {
+            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + moveSpeed);
+            setMovingState(true);
+        }
         else setMovingState(false);
     }
 
