@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class InterfaceScript : MonoBehaviour {
 
+    public Camera usingCamera;
     // переменные инвентаря
     public Color chooseColor;
     public Color normalColor;
 
     public GameObject[] buttons;
-    int lastPressed = 0;
+    public int lastPressed = 0;
     //
 
     // переменные для ideas
@@ -25,7 +26,7 @@ public class InterfaceScript : MonoBehaviour {
     //
 
     public bool showInventory = false;
-    public bool showIdeas = true;
+    public bool showIdeas = false;
 
 
     // Use this for initialization
@@ -33,15 +34,18 @@ public class InterfaceScript : MonoBehaviour {
     {
         for (int i = 0; i < buttons.Length; i++)
         {
+            buttons[i].GetComponent<InventoryButton>().inventory = this;
             buttons[i].GetComponent<InventoryButton>().id = i;
             buttons[i].GetComponent<CanvasRenderer>().SetColor(normalColor);
         }
         addIdea(MAIN_STORY_IDEA, "tttttTTTTtt", 3, 4);
+        UnityEngine.UI.Image panel = transform.GetChild(2).GetComponent<UnityEngine.UI.Image>();
+        
     }
 
     public bool getShow()
     {
-        if (!showInventory || !showIdeas)
+        if (showInventory || showIdeas)
             return true;
         else return false;
     }
@@ -60,6 +64,7 @@ public class InterfaceScript : MonoBehaviour {
 
         for (int i = 0; i < buttons.Length; i++)
         {
+            buttons[i].GetComponent<InventoryButton>().inventory = this;
             if (!buttons[i].GetComponent<InventoryButton>().haveObject)
             {
                 buttons[i].GetComponent<InventoryButton>().objectTexture.sprite = g.GetComponent<SpriteRenderer>().sprite;
@@ -73,7 +78,7 @@ public class InterfaceScript : MonoBehaviour {
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q) && showIdeas == false)
         {
             if (showInventory == false && showInventory == false)
                 GetComponent<Animator>().CrossFade("InventoryShow", 1);
@@ -81,16 +86,18 @@ public class InterfaceScript : MonoBehaviour {
                 GetComponent<Animator>().CrossFade("InventoryHide", 1);
             showInventory = !showInventory;
         }
-        else if (Input.GetKeyDown(KeyCode.D))
+        else if (Input.GetKeyDown(KeyCode.D) && showIdeas == false)
             if (showInventory)
                 setInventory(lastPressed + 1);
             else { }
-        else if (Input.GetKeyDown(KeyCode.A))
+        else if (Input.GetKeyDown(KeyCode.A) && showIdeas == false)
             if (showInventory)
                 setInventory(lastPressed - 1);
             else { }
         else if (Input.GetKeyDown(KeyCode.C))
         {
+            UnityEngine.UI.Image panel = transform.GetChild(2).GetComponent<UnityEngine.UI.Image>();
+            panel.color *= -1;
             for (int i = 0; i < ideas.Length; i++)
             {
                 if (ideas[i] != null)
@@ -100,6 +107,7 @@ public class InterfaceScript : MonoBehaviour {
             }
             showIdeas = !showIdeas;
         }
+        
 
     }
 
@@ -117,9 +125,11 @@ public class InterfaceScript : MonoBehaviour {
         a.text = text;
         g.GetComponent<UnityEngine.UI.Text>().text = text;
         g.GetComponent<RectTransform>().sizeDelta = new Vector2(text.Length * 14, 35);
-        g.transform.position = Camera.main.WorldToScreenPoint(new Vector3(x, y, 0));
+        g.transform.position = usingCamera.WorldToScreenPoint(new Vector3(x, y, 0));
 
         ideas[0] = a;
+
+            a.Hide();
     }
 
     public GameObject createMainStoryIdea(string t)
