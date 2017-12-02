@@ -19,7 +19,6 @@ public class PlayerController : MonoBehaviour {
     public const int STATE_SITTING = 4;
     public const int STATE_IDLE = 5;
 
-
     Animator playerAnimator;
 
     bool isMoving = false;
@@ -31,8 +30,11 @@ public class PlayerController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        moveController();
-        }
+        if (interfaceScript != null)
+            if (interfaceScript.getShow() == false)
+                moveController(); else;
+        else moveController();
+     }
 
     public bool checkPress(KeyCode c)
     {
