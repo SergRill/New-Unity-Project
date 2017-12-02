@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour {
     public InterfaceScript interfaceScript;
 
     public float moveSpeed = 0.01f;
+    public float sitMoveSpeed = 0.01f;
+    public float runMoveSpeed = 0.01f;
+
     public float animationCrossLag = 1;
     bool rightRotate = true;
 
@@ -19,9 +22,18 @@ public class PlayerController : MonoBehaviour {
     public const int STATE_SITTING = 4;
     public const int STATE_IDLE = 5;
 
+    public const int MOVE = 1;
+    public const int STAY = 0;
+
+
     Animator playerAnimator;
 
     bool isMoving = false;
+
+    public bool isSittingState = false;
+    public bool isSitPositionSet = false;
+
+    public float sitChange = 1f;
 
 	// Use this for initialization
 	void Start () {
@@ -63,6 +75,22 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
+    void walkController(float x, float z)
+    {
+        if (STATE == STATE_SITTING || STATE == STATE_WALK_SITTING)
+        {
+            move(sitMoveSpeed * x, 0, z * sitMoveSpeed);
+            setState(STATE_WALK_SITTING);
+            checkRotate(sitMoveSpeed * x); 
+        }
+        else
+        {
+            move(moveSpeed * x, 0, z * moveSpeed);
+            setState(STATE_WALK);
+            checkRotate(x * moveSpeed);
+        }
+    }
+
     public void moveController()
     {
         isMoving = false;
@@ -72,30 +100,29 @@ public class PlayerController : MonoBehaviour {
         {
             setState(STATE_SITTING);
         }
+        else if(Input.GetKeyUp(binds.sitDown))
+        {
+            
+        }
 
         if (checkPress(binds.moveUp))
         {
-            move(0, 0, moveSpeed);
-            setState(STATE_WALK);
+            walkController(STAY, MOVE);
         }
         else if (checkPress(binds.moveDown))
         {
-            move(0, 0, -moveSpeed);
-            setState(STATE_WALK);
+            walkController(STAY, -MOVE);
         }
 
         if (checkPress(binds.moveRight))
         {
-            move(moveSpeed, 0, 0);
-            setState(STATE_WALK);
-            checkRotate(moveSpeed);
+            walkController(MOVE, STAY);
         }
         else if (checkPress(binds.moveLeft))
         {
-            move(-moveSpeed, 0, 0);
-            setState(STATE_WALK);
-            checkRotate(-moveSpeed);
+            walkController(-MOVE, STAY);
         }
+
 
         if(ANIMATION_STATE != STATE)
             checkAnimation();
@@ -121,11 +148,15 @@ public class PlayerController : MonoBehaviour {
             }
             else if (isState(STATE_SITTING))
             {
-                GetComponent<Animator>().CrossFade("sitting", animationCrossLag);
+                GetComponent<Animator>().CrossFade("PLAYER_CROUCHING", animationCrossLag);
+            }
+            else if(isMoving&&isState(STATE_WALK_SITTING))
+            {
+                GetComponent<Animator>().CrossFade("PLAYER_CROUCHING_WALK", animationCrossLag);
             }
             else if (isState(STATE_IDLE))
                 GetComponent<Animator>().CrossFade("idle", animationCrossLag);
-        ANIMATION_STATE = STATE;
+            ANIMATION_STATE = STATE;
     }
  
 
