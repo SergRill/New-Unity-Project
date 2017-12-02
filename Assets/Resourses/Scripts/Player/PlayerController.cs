@@ -4,92 +4,126 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+    public InputBinds binds;
     public InterfaceScript interfaceScript;
 
     public float moveSpeed = 0.01f;
-    public float currentSpeed = 0;
     public float animationCrossLag = 1;
+    bool rightRotate = true;
 
-    Vector3 destination;
-    Vector3 moveWay;
+    public int STATE = 0;
+    int ANIMATION_STATE = 0;
+    public const int STATE_WALK = 1;
+    public const int STATE_RUN = 2;
+    public const int STATE_WALK_SITTING = 3;
+    public const int STATE_SITTING = 4;
+    public const int STATE_IDLE = 5;
 
 
-    Animator plA;
-    Vector3 position = new Vector3();
-    bool movingState = false;
-    bool rightWay = true;
+    Animator playerAnimator;
+
     bool isMoving = false;
 
 	// Use this for initialization
 	void Start () {
-        plA = GetComponent<Animator>();
-    
-      
+        playerAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update() {
+        moveController();
+        }
 
-        if (interfaceScript != null)
-            if (!interfaceScript.getShow())
-                move();
-            else { }
-        else move();
+    public bool checkPress(KeyCode c)
+    {
+        if (Input.GetKey(c))
+            return true;
+        else return false;
     }
 
-    public void move()
+    public void move(float x, float y, float z)
     {
-
-        movingState = false;
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.position = new Vector3(transform.position.x + moveSpeed, transform.position.y, transform.position.z);
-            movingState = true;
-            if (!rightWay)
-            {
-                rightWay = true;
-                transform.localScale = new Vector3(transform.lossyScale.x * -1, transform.lossyScale.y, transform.lossyScale.z);
-            }
-        }
-        else if (Input.GetKey(KeyCode.A))
-        {
-            transform.position = new Vector3(transform.position.x - moveSpeed, transform.position.y, transform.position.z);
-            movingState = true;
-            if (rightWay)
-            {
-                rightWay = false;
-                transform.localScale = new Vector3(transform.lossyScale.x * -1, transform.lossyScale.y, transform.lossyScale.z);
-            }
-        }
-
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z - moveSpeed);
-            movingState = true;
-        }
-        else if (Input.GetKey(KeyCode.W))
-        {
-            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + moveSpeed);
-            movingState = true;
-        }
-
-        setMovingState(movingState);
+        transform.position = new Vector3(transform.position.x + x, transform.position.y  + y, transform.position.z + z);
+        isMoving = true;
     }
 
-
-    public void setMovingState(bool move)
+    public void checkRotate(float s)
     {
-        if (move && !isMoving)
+        if (s > 0 && rightRotate == false)
         {
-            GetComponent<Animator>().CrossFade("walk", animationCrossLag);
-            isMoving = true;
+            rightRotate = true;
+            transform.localScale = new Vector3(transform.lossyScale.x * -1, transform.lossyScale.y, transform.lossyScale.z);
         }
-        else if(!move)
+        else if(s < 0 && rightRotate == true)
         {
-            isMoving = false;
-            GetComponent<Animator>().CrossFade("idle", animationCrossLag);
+            rightRotate = false ;
+            transform.localScale = new Vector3(transform.lossyScale.x * -1, transform.lossyScale.y, transform.lossyScale.z);
         }
-            
+    }
+
+    public void moveController()
+    {
+        isMoving = false;
+        setState(STATE_IDLE);
+
+        if (checkPress(binds.sitDown))
+        {
+            setState(STATE_SITTING);
+        }
+
+        if (checkPress(binds.moveUp))
+        {
+            move(0, 0, moveSpeed);
+            setState(STATE_WALK);
+        }
+        else if (checkPress(binds.moveDown))
+        {
+            move(0, 0, -moveSpeed);
+            setState(STATE_WALK);
+        }
+
+        if (checkPress(binds.moveRight))
+        {
+            move(moveSpeed, 0, 0);
+            setState(STATE_WALK);
+            checkRotate(moveSpeed);
+        }
+        else if (checkPress(binds.moveLeft))
+        {
+            move(-moveSpeed, 0, 0);
+            setState(STATE_WALK);
+            checkRotate(-moveSpeed);
+        }
+
+        if(ANIMATION_STATE != STATE)
+            checkAnimation();
+    }
+
+    public void setState(int state)
+    {
+        STATE = state;
+    }
+
+    public bool isState(int s)
+    {
+        if (STATE == s)
+            return true;
+        else return false;
+    }
+
+    public void checkAnimation()
+    {
+            if (isMoving && isState(STATE_WALK))
+            {
+                GetComponent<Animator>().CrossFade("walk", animationCrossLag);
+            }
+            else if (isState(STATE_SITTING))
+            {
+                GetComponent<Animator>().CrossFade("sitting", animationCrossLag);
+            }
+            else if (isState(STATE_IDLE))
+                GetComponent<Animator>().CrossFade("idle", animationCrossLag);
+        ANIMATION_STATE = STATE;
     }
  
 

@@ -57,6 +57,7 @@
      <Compile Include="Assets\Resourses\Scripts\message.cs" />
      <Compile Include="Assets\Resourses\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Resourses\Scripts\ReimportUnityEngineUI.cs" />
+     <Compile Include="Assets\Resourses\Scripts\System\InputBinds.cs" />
      <Compile Include="Assets\Resourses\Scripts\X_moving.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
