@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 463405f7bf6ba784183991d195c554b3
-timeCreated: 1512412379
+timeCreated: 1512507699
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -20,6 +20,10 @@ TextureImporter:
     21300026: Shahter_details_clothes_21
     21300028: Shahter_details_clothes_22
     21300030: Shahter_details_clothes_5
+    21300032: Shahter_details_clothes_6
+    21300034: Shahter_details_clothes_7
+    21300036: Shahter_details_clothes_8
+    21300038: Shahter_details_clothes_9
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -150,12 +154,12 @@ TextureImporter:
       name: Shahter_details_clothes_15
       rect:
         serializedVersion: 2
-        x: 462
-        y: 283
-        width: 166
-        height: 129
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 587
+        y: 273
+        width: 66
+        height: 139
+      alignment: 9
+      pivot: {x: 0.4816709, y: 0.8655314}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,7 +253,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 683
-        y: 510
+        y: 511
         width: 94
         height: 124
       alignment: 9
@@ -310,6 +314,62 @@ TextureImporter:
         height: 135
       alignment: 9
       pivot: {x: 0.6306714, y: 0.5601137}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shahter_details_clothes_6
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 510
+        width: 94
+        height: 124
+      alignment: 9
+      pivot: {x: 0.6468948, y: 0.2052342}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shahter_details_clothes_7
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 510
+        width: 94
+        height: 124
+      alignment: 9
+      pivot: {x: 0.6468948, y: 0.2052342}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shahter_details_clothes_8
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 329
+        width: 100
+        height: 87
+      alignment: 9
+      pivot: {x: 0.5549587, y: 0.4390082}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shahter_details_clothes_9
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 626
+        width: 249
+        height: 28
+      alignment: 9
+      pivot: {x: 0.8595197, y: 0.45679584}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
