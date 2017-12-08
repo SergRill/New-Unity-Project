@@ -38,7 +38,8 @@ public class InterfaceScript : MonoBehaviour {
             buttons[i].GetComponent<InventoryButton>().id = i;
             buttons[i].GetComponent<CanvasRenderer>().SetColor(normalColor);
         }
-        addIdea(MAIN_STORY_IDEA, "tttttTTTTtt", 3, 4);
+      
+
         UnityEngine.UI.Image panel = transform.GetChild(2).GetComponent<UnityEngine.UI.Image>();
         
     }
