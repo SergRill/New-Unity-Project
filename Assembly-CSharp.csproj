@@ -57,6 +57,7 @@
      <Compile Include="Assets\Resourses\Scripts\message.cs" />
      <Compile Include="Assets\Resourses\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Resourses\Scripts\ReimportUnityEngineUI.cs" />
+     <Compile Include="Assets\Resourses\Scripts\System\AnimationBase.cs" />
      <Compile Include="Assets\Resourses\Scripts\System\AnimationController.cs" />
      <Compile Include="Assets\Resourses\Scripts\System\InputBinds.cs" />
      <Compile Include="Assets\Resourses\Scripts\X_moving.cs" />
