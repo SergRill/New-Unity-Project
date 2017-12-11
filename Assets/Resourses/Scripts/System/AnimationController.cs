@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class AnimationController : MonoBehaviour {
 
-    bool isLoop = false;
-    bool isPlaying = false;
+	public bool isLoop = false;
+    public bool isPlaying = false;
 
     Animator animator;
 
