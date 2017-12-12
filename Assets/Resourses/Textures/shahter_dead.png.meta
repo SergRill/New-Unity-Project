@@ -1,0 +1,268 @@
+fileFormatVersion: 2
+guid: 65024aa37c215524d8feec1b72512008
+timeCreated: 1513025637
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: shahter_dead_0
+    21300002: shahter_dead_1
+    21300004: shahter_dead_2
+    21300006: shahter_dead_3
+    21300008: shahter_dead_4
+    21300010: shahter_dead_5
+    21300012: shahter_dead_6
+    21300014: shahter_dead_7
+    21300016: shahter_dead_8
+    21300018: shahter_dead_9
+    21300020: shahter_dead_10
+    21300022: shahter_dead_11
+    21300024: shahter_dead_12
+    21300026: shahter_dead_13
+    21300028: shahter_dead_14
+    21300030: shahter_dead_15
+    21300032: shahter_dead_16
+    21300034: shahter_dead_17
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: shahter_dead_1
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 511
+        width: 94
+        height: 124
+      alignment: 9
+      pivot: {x: 0.6468948, y: 0.2052342}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_dead_2
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 511
+        width: 94
+        height: 124
+      alignment: 9
+      pivot: {x: 0.6468948, y: 0.2052342}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_dead_5
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 334
+        width: 90
+        height: 199
+      alignment: 9
+      pivot: {x: 0.4303792, y: 0.965305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_dead_7
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 255
+        width: 62
+        height: 156
+      alignment: 9
+      pivot: {x: 0.4816709, y: 0.965305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_dead_9
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 273
+        width: 66
+        height: 139
+      alignment: 9
+      pivot: {x: 0.4816709, y: 0.8655314}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_dead_10
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 339
+        width: 160
+        height: 193
+      alignment: 9
+      pivot: {x: 0.7774624, y: 0.01695671}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_dead_11
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 339
+        width: 160
+        height: 193
+      alignment: 9
+      pivot: {x: 0.7774624, y: 0.01695671}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_dead_13
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 90
+        width: 80
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_dead_14
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 114
+        width: 52
+        height: 102
+      alignment: 9
+      pivot: {x: 0.9217424, y: 0.9061215}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_dead_15
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 169
+        width: 122
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_dead_16
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 29
+        width: 91
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: shahter_dead_17
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 13
+        width: 55
+        height: 87
+      alignment: 9
+      pivot: {x: 0.6624484, y: 0.8174282}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
