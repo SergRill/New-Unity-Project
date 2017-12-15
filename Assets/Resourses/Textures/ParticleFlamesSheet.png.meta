@@ -1,0 +1,563 @@
+fileFormatVersion: 2
+guid: 0952ec1256a1a814598c6c1b3a2f789f
+timeCreated: 1513192091
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ParticleFlamesSheet_0
+    21300002: ParticleFlamesSheet_1
+    21300004: ParticleFlamesSheet_2
+    21300006: ParticleFlamesSheet_3
+    21300008: ParticleFlamesSheet_4
+    21300010: ParticleFlamesSheet_5
+    21300012: ParticleFlamesSheet_6
+    21300014: ParticleFlamesSheet_7
+    21300016: ParticleFlamesSheet_8
+    21300018: ParticleFlamesSheet_9
+    21300020: ParticleFlamesSheet_10
+    21300022: ParticleFlamesSheet_11
+    21300024: ParticleFlamesSheet_12
+    21300026: ParticleFlamesSheet_13
+    21300028: ParticleFlamesSheet_14
+    21300030: ParticleFlamesSheet_15
+    21300032: ParticleFlamesSheet_16
+    21300034: ParticleFlamesSheet_17
+    21300036: ParticleFlamesSheet_18
+    21300038: ParticleFlamesSheet_19
+    21300040: ParticleFlamesSheet_20
+    21300042: ParticleFlamesSheet_21
+    21300044: ParticleFlamesSheet_22
+    21300046: ParticleFlamesSheet_23
+    21300048: ParticleFlamesSheet_24
+    21300050: ParticleFlamesSheet_25
+    21300052: ParticleFlamesSheet_26
+    21300054: ParticleFlamesSheet_27
+    21300056: ParticleFlamesSheet_28
+    21300058: ParticleFlamesSheet_29
+    21300060: ParticleFlamesSheet_30
+    21300062: ParticleFlamesSheet_31
+    21300064: ParticleFlamesSheet_32
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 383
+        width: 60
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_1
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 384
+        width: 59
+        height: 117
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_2
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 391
+        width: 57
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_3
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 392
+        width: 56
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_4
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 388
+        width: 58
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_5
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 388
+        width: 58
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_6
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 388
+        width: 58
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_7
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 388
+        width: 59
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_8
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 266
+        width: 58
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_9
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 266
+        width: 53
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_10
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 265
+        width: 55
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_11
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 268
+        width: 58
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_12
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 264
+        width: 55
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_13
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 267
+        width: 56
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_14
+      rect:
+        serializedVersion: 2
+        x: 806
+        y: 268
+        width: 55
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_15
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 264
+        width: 57
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_16
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 132
+        width: 57
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_17
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 131
+        width: 58
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_18
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 131
+        width: 60
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_19
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 130
+        width: 57
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_20
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 131
+        width: 57
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_21
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 132
+        width: 60
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_22
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 132
+        width: 62
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_23
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 128
+        width: 64
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 11
+        width: 65
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_25
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 11
+        width: 65
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_27
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 6
+        width: 58
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_28
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 8
+        width: 67
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_29
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 6
+        width: 68
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_30
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 10
+        width: 67
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_31
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 8
+        width: 61
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ParticleFlamesSheet_32
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 6
+        width: 57
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

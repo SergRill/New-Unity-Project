@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 65024aa37c215524d8feec1b72512008
-timeCreated: 1513025637
+timeCreated: 1513081677
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -167,9 +167,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 762
-        y: 339
+        y: 337
         width: 160
-        height: 193
+        height: 195
       alignment: 9
       pivot: {x: 0.7774624, y: 0.01695671}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,12 +222,12 @@ TextureImporter:
       name: shahter_dead_15
       rect:
         serializedVersion: 2
-        x: 771
-        y: 169
-        width: 122
-        height: 88
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 746
+        y: 84
+        width: 167
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
