@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour {
 
 
     Animator playerAnimator;
+    Rigidbody rigibody;
 
     bool isMoving = false;
 
@@ -38,6 +39,7 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         playerAnimator = GetComponent<Animator>();
+        rigibody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -57,7 +59,9 @@ public class PlayerController : MonoBehaviour {
 
     public void move(float x, float y, float z)
     {
-        transform.position = new Vector3(transform.position.x + x, transform.position.y  + y, transform.position.z + z);
+
+        rigibody.MovePosition(transform.position + new Vector3(x, y, z));
+      //  transform.position = new Vector3(transform.position.x + x, transform.position.y  + y, transform.position.z + z);
         isMoving = true;
     }
 
@@ -80,21 +84,22 @@ public class PlayerController : MonoBehaviour {
         if (STATE == STATE_SITTING || STATE == STATE_WALK_SITTING)
         {
             move(sitMoveSpeed * x, 0, z * sitMoveSpeed);
-            setState(STATE_WALK_SITTING);
             checkRotate(sitMoveSpeed * x); 
         }
         else
         {
             move(moveSpeed * x, 0, z * moveSpeed);
-            setState(STATE_WALK);
             checkRotate(x * moveSpeed);
         }
     }
+
+    int moveX, moveY;
 
     public void moveController()
     {
         isMoving = false;
         setState(STATE_IDLE);
+        moveX = 0; moveY = 0;
 
         if (checkPress(binds.sitDown))
         {
@@ -107,22 +112,27 @@ public class PlayerController : MonoBehaviour {
 
         if (checkPress(binds.moveUp))
         {
-            walkController(STAY, MOVE);
+            setState(STATE_WALK);
+            moveY = 1;
         }
         else if (checkPress(binds.moveDown))
         {
-            walkController(STAY, -MOVE);
+            setState(STATE_WALK);
+            moveY = -1;
         }
 
         if (checkPress(binds.moveRight))
         {
-            walkController(MOVE, STAY);
+            setState(STATE_WALK);
+            moveX = 1;
         }
         else if (checkPress(binds.moveLeft))
         {
-            walkController(-MOVE, STAY);
+            setState(STATE_WALK);
+            moveX = -1;
         }
 
+        walkController(moveX, moveY);
 
         if(ANIMATION_STATE != STATE)
             checkAnimation();
@@ -130,6 +140,9 @@ public class PlayerController : MonoBehaviour {
 
     public void setState(int state)
     {
+        if (state == STATE_WALK && (STATE == STATE_SITTING || STATE == STATE_WALK_SITTING))
+            STATE = STATE_WALK_SITTING;
+        else
         STATE = state;
     }
 

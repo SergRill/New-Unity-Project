@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 463405f7bf6ba784183991d195c554b3
-timeCreated: 1512507699
+timeCreated: 1513352939
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -24,6 +24,7 @@ TextureImporter:
     21300034: Shahter_details_clothes_7
     21300036: Shahter_details_clothes_8
     21300038: Shahter_details_clothes_9
+    21300040: Shahter_details_clothes_11
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -370,6 +371,20 @@ TextureImporter:
         height: 28
       alignment: 9
       pivot: {x: 0.8595197, y: 0.45679584}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Shahter_details_clothes_11
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 153
+        width: 78
+        height: 175
+      alignment: 9
+      pivot: {x: 0.735104, y: 0.97671354}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
