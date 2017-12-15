@@ -4,13 +4,10 @@ using UnityEngine;
 
 public class AnimationController : MonoBehaviour {
 
-<<<<<<< HEAD
+
 	public bool isLoop = false;
     public bool isPlaying = false;
 
-=======
-    bool isLoop = false;
->>>>>>> 4052c1764df7c85aeaea4cdb15d7eaafa142340c
     Animator animator;
 
     public AnimationBase animationBase;

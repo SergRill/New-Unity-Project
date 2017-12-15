@@ -51,6 +51,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\DecalSystem\Plugins\DecalSystem\Decal.cs" />
+     <Compile Include="Assets\DecalSystem\Plugins\DecalSystem\Utils\DecalBuilder.cs" />
+     <Compile Include="Assets\DecalSystem\Plugins\DecalSystem\Utils\DecalUtils.cs" />
+     <Compile Include="Assets\DecalSystem\Plugins\DecalSystem\Utils\MeshBuilder.cs" />
+     <Compile Include="Assets\DecalSystem\Plugins\DecalSystem\Utils\PolygonClippingUtils.cs" />
      <Compile Include="Assets\Resourses\Scripts\Interface\IdeaScript.cs" />
      <Compile Include="Assets\Resourses\Scripts\Interface\InterfaceScript.cs" />
      <Compile Include="Assets\Resourses\Scripts\Interface\InventoryButton.cs" />

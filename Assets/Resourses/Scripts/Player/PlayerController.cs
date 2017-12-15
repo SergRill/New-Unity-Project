@@ -57,7 +57,9 @@ public class PlayerController : MonoBehaviour {
 
     public void move(float x, float y, float z)
     {
-        transform.position = new Vector3(transform.position.x + x, transform.position.y  + y, transform.position.z + z);
+       Rigidbody r = GetComponent<Rigidbody>();
+        r.MovePosition(transform.position + new Vector3(x, y, z));
+      //  transform.position = new Vector3(transform.position.x + x, transform.position.y  + y, transform.position.z + z);
         isMoving = true;
     }
 
