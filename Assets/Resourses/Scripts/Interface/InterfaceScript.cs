@@ -38,10 +38,8 @@ public class InterfaceScript : MonoBehaviour {
             buttons[i].GetComponent<InventoryButton>().id = i;
             buttons[i].GetComponent<CanvasRenderer>().SetColor(normalColor);
         }
-      
 
         UnityEngine.UI.Image panel = transform.GetChild(2).GetComponent<UnityEngine.UI.Image>();
-        
     }
 
     public bool getShow()
@@ -129,10 +127,8 @@ public class InterfaceScript : MonoBehaviour {
         g.transform.position = usingCamera.WorldToScreenPoint(new Vector3(x, y, 0));
 
         ideas[0] = a;
-
-            a.Hide();
+        a.Hide();
     }
-
     public GameObject createMainStoryIdea(string t)
     {
         return Instantiate(mainStoryIdea, this.gameObject.transform.GetChild(gameObject.transform.GetChildCount() - 1));

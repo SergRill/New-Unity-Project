@@ -8,11 +8,7 @@ public class AnimationController : MonoBehaviour {
 	public bool isLoop = false;
     public bool isPlaying = false;
 
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 0fa157d8fd09eb865e88e2dfd5a596b73e5450ec
     Animator animator;
 
     public AnimationBase animationBase;
