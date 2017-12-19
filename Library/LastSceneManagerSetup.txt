@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Resourses/Scenes/Intro.unity
+=======
+- path: Assets/Resourses/Scenes/Shipping.unity
+>>>>>>> e17e4dd8fd5fb2d34589163e0bce82c45fa5d86a
   isLoaded: 1
   isActive: 1

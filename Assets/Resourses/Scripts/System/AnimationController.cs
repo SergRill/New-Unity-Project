@@ -9,6 +9,10 @@ public class AnimationController : MonoBehaviour {
     public bool isPlaying = false;
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e17e4dd8fd5fb2d34589163e0bce82c45fa5d86a
     Animator animator;
 
     public AnimationBase animationBase;
